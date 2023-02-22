@@ -225,6 +225,7 @@ img {
 
 .home__img {
   position: absolute;
+  z-index: -1;
   top: 2rem;
   right: 0;
   bottom: 0;
