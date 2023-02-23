@@ -257,7 +257,7 @@ img {
 
 /* ===== ABOUT =====*/
 .about__container {
-  row-gap: 2rem;
+  row-gap: 1rem;
   text-align: center;
 }
 
@@ -276,7 +276,7 @@ img {
 
 /* ===== SKILLS =====*/
 .skills__container {
-  row-gap: 2rem;
+  row-gap: 1rem;
   text-align: center;
 }
 
@@ -354,12 +354,28 @@ img {
   overflow: hidden;
 }
 
+/* ==card change== */
+.card-text{
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  width: 16rem;
+  height: 16rem;
+  font-size: 0.8rem;
+  transition: 0.5s;
+}
+.card-text:hover{
+  opacity: 100;
+  background-color: white;
+}
+
 .work__img img {
-  transition: 1s;
+  transition: 0.8s;
 }
 
 .work__img img:hover {
   transform: scale(1.1);
+  opacity: 0;
 }
 
 /* ===== CONTACT =====*/
@@ -503,7 +519,7 @@ img {
     bottom: 10%;
   }
   .about__container {
-    padding-top: 2rem;
+    padding-top: 0.5rem;
   }
   .about__img img {
     width: 300px;
