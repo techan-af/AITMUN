@@ -49,6 +49,15 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  background: hsla(233, 100%, 90%, 1);
+
+  background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CAD0FF", endColorstr="#E3E3E3", GradientType=1 );
 }
 
 h1, h2, p {
@@ -108,12 +117,21 @@ img {
 
 .l-header {
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+.nav-colored { 
+  background-color:#acb9ff;
+  transition: 0.5s;
+
+}
+.nav-transparent { 
+  background-color:transparent;
+  transition: 0.5s;
+
 }
 
 /*===== NAV =====*/
@@ -349,13 +367,47 @@ img {
 }
 .work__img {
   width: 18rem;
+  background-color: white;
   padding: 1rem;
   margin: auto;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: .5rem;
   overflow: hidden;
 }
+.contact__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  margin: 2rem auto auto auto;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: .5rem;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.contact-wrapper{
+  margin: auto;
+}
+.contact__img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.contact__image{
+  border-radius: 70%;
+}
 
+.contact__text{
+  padding: 0.5rem;
+  margin: 1rem auto auto auto;
+}
+.bg-grid {
+  max-width: 1024px;
+  display: grid;
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
 /* ==card change== */
 .card-text{
   opacity: 0;
@@ -494,6 +546,11 @@ img {
     column-gap: 1rem;
   }
   .work__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    padding-top: 2rem;
+  }
+  .worked__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     padding-top: 2rem;
@@ -558,8 +615,8 @@ img {
     align-items: center;
     text-align: initial;
   }
-  .work__container {
-    grid-template-columns: repeat(3, 1fr);
+  .worked__container {
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
   }
 }
@@ -568,6 +625,9 @@ img {
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
+  }
+  .bg-grid{
+    margin: 1rem auto;
   }
   .home {
     padding: 10rem 0 2rem;
