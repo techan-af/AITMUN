@@ -8,8 +8,8 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --first-color: #284b63;
+  --second-color: #000;
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
@@ -48,16 +48,8 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
-  background: hsla(233, 100%, 90%, 1);
-
-  background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
-  
-  background: -moz-linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
-  
-  background: -webkit-linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CAD0FF", endColorstr="#E3E3E3", GradientType=1 );
+  color: #000;
+  background-color: #D9D9D9;
 }
 
 h1, h2, p {
@@ -124,9 +116,8 @@ img {
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 .nav-colored { 
-  background-color:#acb9ff;
+  background-color:#d9d9d9;
   transition: 0.5s;
-
 }
 .nav-transparent { 
   background-color:transparent;
@@ -285,9 +276,6 @@ img {
   margin-bottom: var(--mb-2);
 }
 
-.about__img {
-  justify-self: center;
-}
 
 .about__img img {
   width: 200px;
@@ -455,7 +443,7 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-color: #284b63;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -608,6 +596,21 @@ img {
   }
   .about__img img {
     width: 300px;
+    padding: 2rem;
+  }
+  #about-img{
+    background-color: white;
+    padding: 1rem;
+    margin: auto;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    border-radius: .5rem;
+    overflow: hidden;
+    justify-self: center;
+    transition: 0.5s;
+  }
+  #about-img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
   }
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
@@ -619,6 +622,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
   }
+
 }
 
 @media screen and (min-width: 992px) {
