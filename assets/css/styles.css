@@ -179,8 +179,14 @@ img {
 
 .nav__logo {
   color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.nav__logo img{
+  width: 2rem;
+  margin-right: 0.5rem;
+}
 .nav__toggle {
   display: relative;
   z-index: 50;
