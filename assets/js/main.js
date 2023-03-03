@@ -7,6 +7,7 @@ const showMenu = (toggleId, navId) =>{
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
             nav.classList.toggle('show')
+            toggle.classList.toggle('nav__togglechange')
         })
     }
 

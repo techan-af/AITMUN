@@ -184,9 +184,17 @@ img {
 .nav__toggle {
   display: relative;
   z-index: 50;
-  color: var(--second-color);
+  color: #000;
   font-size: 1.5rem;
   cursor: pointer;
+}
+.nav__togglechange {
+  display: relative;
+  z-index: 50;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 /*Active menu*/
