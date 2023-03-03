@@ -394,6 +394,9 @@ img {
 .contact__image{
   border-radius: 70%;
 }
+.contact__icon{
+  font-size: 1.5rem;
+}
 
 .contact__text{
   padding: 0.5rem;
