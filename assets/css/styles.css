@@ -80,7 +80,14 @@ img {
   margin-bottom: var(--mb-4);
   text-align: center;
 }
-
+.section-titled {
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-top: (--mb-4);
+  margin-bottom: var(--mb-1);
+  text-align: center;
+}
 .section-title::after {
   position: absolute;
   content: '';
@@ -92,7 +99,9 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
-
+.social{
+  font-size: 2rem;
+}
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
@@ -121,6 +130,9 @@ img {
 .nav-transparent { 
   background-color:transparent;
   transition: 0.5s;
+}
+.sec-container{
+  margin-top: 2rem;
 }
 
 /*===== NAV =====*/
@@ -410,6 +422,7 @@ img {
   overflow: hidden;
   transition: 0.5s;
   max-width: 20rem;
+  min-height: 30rem;
 }
 .contact-wrapper{
   margin: auto;
@@ -421,13 +434,15 @@ img {
 .contact__image{
   border-radius: 70%;
 }
+
 .contact__icon{
   font-size: 1.5rem;
 }
 
 .contact__text{
-  padding: 0.5rem;
-  margin: 1rem auto auto auto;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  margin: auto auto auto auto;
+  text-align: center;
 }
 .bg-grid {
   max-width: 1024px;
@@ -645,6 +660,11 @@ img {
   }
   .worked__container {
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding-top: 2rem;
+  }
+  .worked__container3 {
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     padding-top: 2rem;
   }
