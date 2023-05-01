@@ -308,9 +308,12 @@ img {
 }
 
 /* ===== ABOUT =====*/
-.about__container {
+.container {
   row-gap: 1rem;
   text-align: center;
+}
+#memories{
+  background-color: #f7f7f7;
 }
 
 .about__subtitle {
@@ -730,7 +733,7 @@ img {
   }
 
   #about-img{
-    background-color: white;
+    background-color: #f7f7f7;
     padding: 1rem;
     margin: auto;
     box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
@@ -738,6 +741,9 @@ img {
     overflow: hidden;
     justify-self: center;
     transition: 0.5s;
+  }
+  #about-img img{
+    transform: scale(1.4);
   }
   #about-img:hover{
     transform: scale(1.1);
